@@ -1,7 +1,8 @@
 function loaderAnim(){
-    gsap.from(".loader .text h1", {
+  var tl = gsap.timeline()
+    tl.from(".loader .text h1,.loader .text h2", {
       y: "200%",
-      duration: .8,
+      duration: 0.8,
       stagger: 0.2,
       dealy: 0.5,
     });
@@ -16,22 +17,21 @@ function loaderAnim(){
       }
     }, 30);
 
-    gsap.to(".loader", {
+    tl.to(".loader", {
       y: "-100%",
       display: "none",
-      duration: 0.6,
-      delay: 4,
+      duration: 1,
+      delay:2.5
     });
-    gsap.to(".loader .texts .text3 h2", {
+   gsap.to(".loader .texts .text3 h2", {
       opacity: 1,
       duration: 0.6,
-      delay: 1.5,
       AnimationName: "fontChange",
     });
-    gsap.from(".page1", {
+    tl.from(".page1", {
       y: "100%",
-      duration: 0.6,
-      delay: 3.8,
+      duration: 1,
+      delay: -1,
     });
 }
 loaderAnim();

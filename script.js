@@ -33,5 +33,24 @@ function loaderAnim(){
       duration: 1,
       delay: -1,
     });
+    tl.from(".page1 .hero-texts h1,.page1 .hero-texts h2,.page1 .hero-texts h3,.page1 .hero-texts h4",{
+      y: "100%",
+      duration: 0.5,
+      stagger: 0.2,
+      delay:-.5,
+    })
 }
+
+function crsrAnim(){
+  document.addEventListener("mousemove",function (e){
+    gsap.to(".cursor",{
+      left:e.x,
+      top:e.y,
+      ease:"power4"
+    })
+  })
+}
+
+
 loaderAnim();
+crsrAnim()

@@ -12,6 +12,18 @@ body {
   background-color: #000;
   color: #fff;
   overflow-x: hidden;
+  cursor: none;
+}
+.cursor{
+  position: fixed;
+  pointer-events: none;
+  height: 3vw;
+  width: 3vw;
+  border-radius: 50%;
+  border: 1px solid #777575;
+  z-index: 88;
+  mix-blend-mode: difference;
+  transform: translate(-50%,-50%);
 }
 .loader {
   height: 100%;
@@ -179,6 +191,20 @@ body {
   display: flex;
   align-items: center;
   gap: 1vw;
+  overflow: hidden;
+  height: fit-content;
+}
+.page1 .hero-texts .line1{
+  overflow: hidden;
+  height: fit-content;
+}
+.page1 .hero-texts .line2{
+  overflow: hidden;
+  height: fit-content;
+}
+.page1 .hero-texts .line4{
+  overflow: hidden;
+  height: fit-content;
 }
 .page1 .hero-texts h1,
 .page1 .hero-texts h2,
@@ -189,44 +215,49 @@ body {
   font-weight: bold;
   position: relative;
 }
-.page1 .hero-texts h2::after {
-  content: '';
-  position: absolute;
-  bottom: -.7vw;
-  left: 0;
-  background-color: #fff;
-  height: .6vw;
-  filter: blur(.7px);
-  width: 100%;
-  transition: opacity 1s ease-in;
+.page1 .hero-texts h2 {
+  border-bottom: .7vw solid #fff;
 }
-.page1 .hero-texts h3::after {
-  content: '';
-  filter: blur(.7px);
-  position: absolute;
-  bottom: -.7vw;
-  left: 0;
-  background-color: #fff;
-  height: .6vw;
-  width: 100%;
+.page1 .hero-texts h3{
+  border-bottom: .7vw solid #fff;
 }
 .page1 .hero-texts h2:hover{
   -webkit-text-stroke: 1px #fff ;
   color: transparent;
   font-weight: 500;
   transition: all ease .2s;
-}
-.page1 .hero-texts h2:hover::after{
-  display: none;
-  opacity: 0;
+  border: 0;
 }
 .page1 .hero-texts h3:hover{
   -webkit-text-stroke: 1px #fff ;
   color: transparent;
   font-weight: 500;
   transition: all ease .2s;
+  border: 0;
 }
-.page1 .hero-texts h3:hover::after{
-  display: none;
-  opacity: 0;
+.left-scroll-anim{
+  margin-top: 21vw;
+  margin-left: 5vw;
+  height: 6vh;
+  width: 5vw;
+  color: #777575;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  overflow: hidden;
+}
+.left-scroll-anim h5{
+  animation: scroll 2s infinite  ;
+  font-size: 1.1vw;
+}
+@keyframes scroll {
+  0%{
+    transform: translateY(-100%);
+  }
+  50%{
+    transform: translateY(60%);
+  }
+  100%{
+    transform: translateY(320%);
+  }
 }

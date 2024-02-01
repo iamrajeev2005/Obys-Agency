@@ -1,26 +1,129 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Gilroy;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Plain Light";
 }
-html, body{
-    height: 100%;
-    width: 100%;
-    position: relative;
+html,
+body {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background-color: #000;
+  color: #fff;
+  overflow-x: hidden;
 }
-.loader{
-    height: 100%;
-    width: 100%;
-    background-color: black;
-    position: fixed;
-    z-index: 1;
+.loader {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  position: fixed;
+  z-index: 1;
 }
-.main{
-    position: relative;
+.loader .texts {
+  margin-top: 10vw;
 }
-.page1{
-    height: 100vh;
-    width: 100vw;
-    background-color: blue;
+.loader .text {
+  overflow: hidden;
+}
+.loader .text1 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 5vw;
+}
+.loader .text .count {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2vw;
+}
+.loader .text .count h5,
+.loader .text .count h6 {
+  font-size: 5vw;
+  font-family: "silk serif";
+  font-weight: 100;
+}
+.loader .text .count h5 {
+  text-align: right;
+  width: 8.5vw;
+}
+.loader h1 {
+  margin-left: 5vw;
+  height: fit-content;
+  font-size: 7.2vw;
+  font-weight: lighter;
+}
+.loader .texts .text3 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 3vw;
+}
+.loader .texts .text3 h2 {
+  font-size: 5.6vw;
+  font-weight: 100;
+  opacity: 0;
+  animation: 2s infinite alternate;
+}
+@keyframes fontChange {
+  0% {
+    font-family: "Plain Light";
+    -webkit-text-stroke: 1px #fff;
+    color: #fff;
+    font-size: 500;
+    opacity: 1;
+  }
+  48% {
+    font-family: "Plain Light";
+    opacity: 0;
+    -webkit-text-stroke: 1px #fff;
+    font-size: 500;
+    color: #fff;
+  }
+  50% {
+    font-family: "silk serif";
+    opacity: 1;
+    -webkit-text-stroke: 1px #fff;
+    font-size: 500;
+    color: transparent;
+  }
+  100% {
+    font-family: "silk serif";
+    opacity: 0;
+    color: transparent;
+    font-size: 500;
+    -webkit-text-stroke: 1px #fff;
+  }
+}
+.loader p {
+  margin-left: 28vw;
+  margin-top: 1vw;
+  width: fit-content;
+  animation: btmAnim;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes btmAnim {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.main {
+  position: relative;
+}
+.page1 {
+  height: 100vh;
+  width: 100vw;
+  background-color: #151515;
 }

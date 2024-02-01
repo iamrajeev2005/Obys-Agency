@@ -127,3 +127,37 @@ body {
   width: 100vw;
   background-color: #151515;
 }
+.page1 nav{
+    padding: .5vw 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.page1 nav .nav-1{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    gap: 13.5vw;
+}
+.page1 nav .nav-1 p{
+    font-size: 1.1vw;
+    line-height: 1;
+    padding-top: 3.5vw;
+}
+.page1 nav .nav-1 .svg{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3vw;
+}
+.page1 nav .nav-2{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    gap: 2.6vw;
+}
+.page1 nav .nav-2 a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1vw;
+}

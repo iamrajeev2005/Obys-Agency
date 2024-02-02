@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Obys Agency</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -139,13 +144,23 @@
         <div class="hero-texts">
           <div class="line1"><h1>WE DESIGN</h1></div>
           <div class="line2"><h1>UNIQUE</h1></div>
-          <div class="line3"><h2>WEB</h2><h4>/</h4><h3>GRAPHIC</h3></div>
+          <div class="line3" id="line3">
+            <h2>WEB</h2>
+            <h4>/</h4>
+            <h3>GRAPHIC</h3>
+          </div>
           <div class="line4"><h1>EXPERIENCE</h1></div>
+          <img id="flag" src="./Assets/Flag.jpg" alt="">
         </div>
         <div class="left-scroll-anim">
           <h5>Scroll</h5>
         </div>
+        <div class="video-container">
+          <div class="video-cursor"><i class="ri-play-fill"></i></div>
+          <video src="https://obys.agency/wp-content/uploads/2022/11/Obys-Showreel-2022.mp4"></video>
+        </div>
       </div>
+      <div class="page2"></div>
     </div>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
@@ -158,6 +173,10 @@
       integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://unpkg.com/sheryjs/dist/Shery.js"
     ></script>
     <script src="./script.js"></script>
   </body>

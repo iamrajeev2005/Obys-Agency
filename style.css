@@ -409,7 +409,7 @@ body {
 }
 .page2 .marquee h1 {
   white-space: nowrap;
-  font-size: 8vw;
+  font-size: 7vw;
   -webkit-text-stroke: 0.01vw #888888;
   font-size: 600;
   color: transparent;
@@ -437,6 +437,10 @@ body {
   100% {
     transform: translateX(-100%);
   }
+}
+.page2 .marquee h1 span {
+  display: inline-block;
+  font-family: "silk serif";
 }
 .page4 .page-no h2 {
   font-size: 3.5vw;

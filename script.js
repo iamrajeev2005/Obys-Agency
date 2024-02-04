@@ -82,14 +82,16 @@ function loaderAnim() {
   );
 }
 
-function crsrAnim() {
-  document.addEventListener("mousemove", function (e) {
-    gsap.to(".cursor", {
-      left: e.x,
-      top: e.y,
-      ease: "power4",
+if(window.innerWidth > 600){
+  function crsrAnim() {
+    document.addEventListener("mousemove", function (e) {
+      gsap.to(".cursor", {
+        left: e.x,
+        top: e.y,
+        ease: "power4",
+      });
     });
-  });
+  }
 }
 
 function videoCrsr() {

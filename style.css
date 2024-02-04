@@ -46,7 +46,7 @@ body {
   width: 100%;
   background-color: black;
   position: fixed;
-  z-index: 100;
+  z-index: 87;
 }
 .loader .texts {
   margin-top: 10vw;
@@ -211,7 +211,7 @@ body {
   overflow: hidden;
   height: fit-content;
   position: relative;
-  z-index: 99;
+  z-index: 86;
 }
 .page1 .hero-texts .line1 {
   overflow: hidden;
@@ -775,6 +775,9 @@ body {
   pointer-events: none;
 }
 @media (max-width: 600px) {
+  .cursor {
+    display: none;
+}
   .loader {
     display: flex;
     align-items: center;
@@ -1007,7 +1010,7 @@ body {
   }
   .page3 .marquee h1 {
     font-size: 8vw;
-    -webkit-text-stroke: 0.01vw #ffffff;
+    -webkit-text-stroke: 0.1vw #ffffff;
     font-size: 100;
   }
   .page4 {

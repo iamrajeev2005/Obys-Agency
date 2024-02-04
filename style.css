@@ -537,10 +537,10 @@ body {
   align-items: center;
   justify-content: center;
 }
-.page2 #circle-div #circle3:hover {
+.page2 #circle-div #circle4:hover {
   transform: scale(0.85);
 }
-.page2 #circle-div #circle3 {
+.page2 #circle-div #circle4 {
   position: relative;
   height: 22vw;
   width: 22vw;
@@ -622,6 +622,7 @@ body {
   background-color: #3f7df4;
   height: 80vh;
   width: 45vw;
+  padding: 2vw 4vw;
 }
 .page3 .underline1 {
   background-color: #fff;
@@ -633,9 +634,6 @@ body {
 .page3 h5 {
   font-weight: normal;
   font-size: 1vw;
-}
-.page3 .about-content .blue-div {
-  padding: 2vw 4vw;
 }
 .page3 .about-content .blue-div .elem {
   display: flex;
@@ -711,7 +709,15 @@ body {
   gap: 3vw;
 }
 .page4 .page-no h1 {
+  display: flex;
+  align-items: center;
+  gap: 2vw;
   font-size: 7vw;
+}
+.page4 .page-no h1 svg {
+  height: 7vw;
+  width: 7vw;
+  transform: rotate(-90deg);
 }
 .page4 .underline {
   background-color: #fff;
@@ -871,24 +877,168 @@ body {
     margin-top: 20vw;
   }
   .img-container .img-div2 .texts {
-    padding-top: 2vw;
+    padding: 4vw 0vw;
   }
   .img-container .img-div3 {
     margin-top: 20vw;
   }
   .img-container .img-div3 .texts {
-    padding-top: 2vw;
+    padding: 4vw 0vw;
   }
   .img-container .img-div4 {
     margin-top: 20vw;
   }
   .img-container .img-div4 .texts {
-    padding-top: 2vw;
+    padding: 4vw 0vw;
   }
   .img-container .img-div5 {
     margin-top: 20vw;
   }
   .img-container .img-div5 .texts {
+    padding: 4vw 0vw;
+  }
+  .page2 #circle-div {
+    margin-top: 50vw;
+  }
+  .page2 #circle-div #circle4 {
+    height: 40vw;
+    width: 40vw;
+  }
+  .page3 {
+    padding-left: 4vw;
+  }
+  .page3 .page-no {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-top: 5vw;
+    margin-left: 1vw;
+  }
+  .page3 .page-no h2 {
+    font-size: 5vw;
+  }
+  .page3 .page-no h1 {
+    font-size: 9vw;
+  }
+  .page3 .underline {
+    height: 0.05vw;
+    width: 92vw;
+  }
+  .page3 p {
+    margin-top: 12vw;
+    font-size: 5.6vw;
+    width: 96%;
+  }
+  .about-content {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column-reverse;
+    gap: 2vw;
+  }
+  .about-content .about-text {
+    margin-top: -4vw;
+  }
+  .about-content .about-text p {
+    font-size: 4vw;
+    width: 75%;
+    line-height: 1.6;
+  }
+  .about-content .about-text p:nth-child(2) {
+    margin-top: 6vw;
+    width: 77%;
+  }
+  .about-content .about-img {
+    height: 55vh;
+    width: 92vw;
+    margin-top: 8vw;
+  }
+  .page3 .about-content .blue-div {
+    top: 96%;
+    left: 0%;
+    height: 50vh;
+    width: 92vw;
+  }
+  .page3 .about-content .blue-div .elem {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 4vw 0vw 10vw 0vw;
+  }
+  .page3 .about-content .blue-div .elem h2 {
+    font-size: 4vw;
+    font-weight: normal;
+  }
+  .page3 .about-content .blue-div .elem h3 {
+    font-size: 3vw;
+    font-weight: normal;
+  }
+  .page3 .underline1 {
+    height: 0.1vw;
+    width: 92vw;
+    margin-top: 115vw;
+    margin-bottom: 4vw;
+  }
+  .page3 h5 {
+    font-size: 3.5vw;
+  }
+  .page3 .marquee {
+    margin: 10vw 0vw;
+  }
+  .page3 .marquee h1 {
+    font-size: 8vw;
+    -webkit-text-stroke: 0.01vw #ffffff;
+    font-size: 100;
+  }
+  .page4 {
+    padding-left: 4vw;
+    margin-top: 50vw;
+    height: 90vh;
+  }
+  .page4 .page-no {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-top: 5vw;
+  }
+  .page4 .page-no h2 {
+    font-size: 5vw;
+  }
+  .page4 .page-no h1 {
+    font-size: 9vw;
+  }
+  .page4 .underline {
+    height: 0.05vw;
+    width: 92vw;
+    margin: 6vw 0vw;
+  }
+  .page4 .footer-links {
+    height: 45vh;
+    width: 65vw;
+    display: flex;
+    align-items: start;
     padding-top: 2vw;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  .page4 .footer-links .one h5 {
+    font-size: 4vw;
+    font-weight: 500;
+  }
+  .page4 .footer-links .one .links {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 1.1;
+  }
+  .page4 .footer-links .one .links a {
+    color: #cfcfcf;
+    font-size: 5vw;
+  }
+  .page4 .underline {
+    margin: 10vw 0vw;
+  }
+  .page4 h5 {
+    font-size: 4vw;
   }
 }

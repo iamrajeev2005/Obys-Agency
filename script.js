@@ -175,39 +175,9 @@ function sheryAnim() {
 
   Shery.imageEffect(".page2 .img-container .img-div .img", {
     style: 5,
-    gooey: true,
+    gooey:true,
     config: {
-      a: { value: 1.83, range: [0, 30] },
-      b: { value: -0.18, range: [-1, 1] },
-      zindex: { value: "9996999", range: [-9999999, 9999999] },
-      aspect: { value: 0.8928834055069859 },
-      ignoreShapeAspect: { value: true },
-      shapePosition: {
-        value: { x: 0.010752688172043001, y: -0.021505376344086002 },
-      },
-      shapeScale: { value: { x: 1, y: 1 } },
-      shapeEdgeSoftness: { value: 0, range: [0, 0.5] },
-      shapeRadius: { value: 0, range: [0, 2] },
-      currentScroll: { value: 0 },
-      scrollLerp: { value: 0.07 },
-      gooey: { value: true },
-      infiniteGooey: { value: false },
-      growSize: { value: 4, range: [1, 15] },
-      durationOut: { value: 1, range: [0.1, 5] },
-      durationIn: { value: 1.5, range: [0.1, 5] },
-      displaceAmount: { value: 0.5 },
-      masker: { value: true },
-      maskVal: { value: 1.31, range: [1, 5] },
-      scrollType: { value: 0 },
-      geoVertex: { range: [1, 64], value: 1 },
-      noEffectGooey: { value: true },
-      onMouse: { value: 0 },
-      noise_speed: { value: 1.3, range: [0, 10] },
-      metaball: { value: 0.41, range: [0, 2] },
-      discard_threshold: { value: 0.55, range: [0, 1] },
-      antialias_threshold: { value: 0, range: [0, 0.1] },
-      noise_height: { value: 0.5, range: [0, 2] },
-      noise_scale: { value: 10, range: [0, 100] },
+      "a":{"value":1.83,"range":[0,30]},"b":{"value":-1,"range":[-1,1]},"zindex":{"value":"9996999","range":[-9999999,9999999]},"aspect":{"value":0.8928834055069859},"ignoreShapeAspect":{"value":true},"shapePosition":{"value":{"x":0.010752688172043001,"y":-0.021505376344086002}},"shapeScale":{"value":{"x":1,"y":1}},"shapeEdgeSoftness":{"value":0,"range":[0,0.5]},"shapeRadius":{"value":0,"range":[0,2]},"currentScroll":{"value":0},"scrollLerp":{"value":0.07},"gooey":{"value":true},"infiniteGooey":{"value":false},"growSize":{"value":4,"range":[1,15]},"durationOut":{"value":1,"range":[0.1,5]},"durationIn":{"value":1.5,"range":[0.1,5]},"displaceAmount":{"value":0.5},"masker":{"value":true},"maskVal":{"value":1.12,"range":[1,5]},"scrollType":{"value":0},"geoVertex":{"range":[1,64],"value":1},"noEffectGooey":{"value":true},"onMouse":{"value":0},"noise_speed":{"value":0.84,"range":[0,10]},"metaball":{"value":0.37,"range":[0,2]},"discard_threshold":{"value":0.55,"range":[0,1]},"antialias_threshold":{"value":0,"range":[0,0.1]},"noise_height":{"value":0.5,"range":[0,2]},"noise_scale":{"value":10,"range":[0,100]}
     },
   });
 }

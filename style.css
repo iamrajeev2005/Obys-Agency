@@ -37,7 +37,7 @@ body {
   width: 3vw;
   border-radius: 50%;
   border: 1px solid #777575;
-  z-index: 88;
+  z-index: 100;
   mix-blend-mode: difference;
   transform: translate(-50%, -50%);
 }
@@ -262,7 +262,7 @@ body {
   height: 100%;
   object-fit: cover;
   opacity: 0;
-  z-index: 98;
+  z-index: 85;
 }
 .left-scroll-anim {
   margin-top: 21vw;
